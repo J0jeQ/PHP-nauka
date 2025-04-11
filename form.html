@@ -14,8 +14,29 @@
         <label for="email">E-mail:</label><br><br>
         <input type="email" name="email" id="email" required><br><br>
 
+        <label for="phone">Numer telefonu:</label>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789" required><br><br>
+
+        <label for="birthdate">Data urodzenia</label><br>
+        <input type="birthdate" name="birthdate" id="birthdate">
+
+        <label for="subject">Temat wiadomosci:</label>
+        <select name="subject" id="subject" required>
+        <option value="general">Ogolny</option>
+        <option value="inquiry">Zapytanie</option>
+        <option value="feedback">Opinia</option>
+        </select><br><br>
+
+
+
         <label for="message">Wiadomosc:</label><br><br>
         <textarea name="message" id="message" rows="4" required></textarea><br><br>
+
+        <label>Preferencje kontaktu:</label><br>
+        <input type="radio" name="contact-preference" value="email" checked>E-mail
+        <input type="radio" name="contact-preference" value="phone">Telefon
+
+
         <input type="submit" value="Wyslij">
 
     </form>
